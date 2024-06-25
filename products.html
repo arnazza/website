@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Fineyaa Cosmetics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showProducts(category) {
+            const skincareProducts = document.getElementById('skincare-products');
+            const makeupProducts = document.getElementById('makeup-products');
+            skincareProducts.style.display = 'none';
+            makeupProducts.style.display = 'none';
+            
+            if (category === 'skincare') {
+                skincareProducts.style.display = 'block';
+            } else if (category === 'makeup') {
+                makeupProducts.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <p>Shop Your Favorite Brands for Flawless Beauty Results</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="promotions.html">Promotions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Categories</h2>
+        <div class="product">
+            <div class="kotak" onclick="showProducts('skincare')">
+                <h1>Skincare</h1>
+            </div>
+            <div class="kotak" onclick="showProducts('makeup')">
+                <h1>Makeup</h1>
+            </div>
+        </div>
+    </section>
+    <section id="skincare-products" style="display:none;">
+        <h2>Skincare Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="image/emina face scrub.png" alt="Emina Product">
+                <p>Emina Face Scrub</p>
+                <a href="contact.html" class="cta">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="image/emina sugar rush.webp" alt="Emina Product">
+                <p>Emina Sugar Rush</p>
+                <a href="contact.html" class="cta">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="image/wardah moisture lip.avif" alt="Wardah Product">
+                <p>Wardah Moisture Lip</p>
+                <a href="contact.html" class="cta">Buy Now</a>
+            </div>
+        </div>
+    </section>
+    <section id="makeup-products" style="display:none;">
+        <h2>Makeup Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="image/glossy stain emina.jpeg" alt="Emina Product">
+                <p>Emina Glossy Stain</p>
+                <a href="contact.html" class="cta">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="image/emina loose powder.jpg" alt="Emina Product">
+                <p>Emina Loose Powder</p>
+                <a href="contact.html" class="cta">Buy Now</a>
+            </div>        
+            <div class="product-item">
+                <img src="image/makeover cushion.avif" alt="Make Over Product">
+                <p>Make Over Cushion</p>
+                <a href="contact.html" class="cta">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="image/makeover eyeshadow palette.jpeg" alt="Make Over Product">
+                <p>Make Over Eyeshadow Palette</p>
+                <a href="contact.html" class="cta">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="image/make over ultra cover.jpg" alt="Make Over Product">
+                <p>Make Over Ultra Cover</p>
+                <a href="contact.html" class="cta">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="image/makeover velvet primer.jpg" alt="Make Over Product">
+                <p>Make Over Velvet Primer</p>
+                <a href="contact.html" class="cta">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="image/wardah browfessional.jpeg" alt="Wardah Makeup">
+                <p>Wardah Browfessional</p>
+                <a href="contact.html" class="cta">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="image/wardah crystal secret.jpg" alt="Wardah Makeup">
+                <p>Wardah Crystal Secret</p>
+                <a href="contact.html" class="cta">Buy Now</a>
+            </div>
+            <div class="product-item">
+                <img src="image/wardah instaperfect quick fix.jpeg" alt="Wardah Makeup">
+                <p>Wardah Instaperfect Quick Fix</p>
+                <a href="contact.html" class="cta">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
